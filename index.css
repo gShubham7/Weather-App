@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav {
+    height: 100px;
+    background-color: rgb(255, 246, 246);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search-box {
+    width: 650px;
+    height: 25px;
+    padding: 10px;
+    border-style: hidden;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-box+button {
+    position: absolute;
+    left: 690px;
+    border-radius: 0 5px 5px 0;
+    border: hidden;
+    background-color: rgb(65, 55, 55);
+    color: whitesmoke;
+    /* height: 20px; */
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+#nav span {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(250, 209, 209);
+    color: black;
+    /* height: 20px; */
+    padding: 5px 10px;
+}
+
+#nav span:first-of-type {
+    margin-left: 100px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#details {
+    width: 40%;
+    margin-left: 50px;
+}
+
+#details>h3:first-child {
+    color: orange;
+}
+
+#city {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+img+span {
+    font-size: 50px;
+}
+
+#weather-data {
+    border-left: 2px solid orangered;
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#weather-data span {
+    font-weight: lighter;
+    margin: 10px;
+    line-height: 30px;
+}
+
+#map {
+    height: 400px;
+    width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#weekForcast{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(8,12.5%);
+    background-color: rgb(90, 66, 66);
+    justify-content: center;
+    color: white;
+    margin: auto;
+    margin: 20px 60px;
+    border-radius: 5px;
+}
+
+#weekForcast>div:hover{
+    background-color: rgb(146, 98, 98);
+   
+}
+
+#weekForcast>div{
+    padding: 0 40px;
+    border: 1px solid rgb(146, 98, 98);
+    padding: 10px 0;
+    text-align: center;
+}
+
+#weekForcast>div:first-of-type,#weekForcast>div:last-of-type{
+    border: none;
+}
+
+#weekForcast>div>h3:last-child{
+    font-weight: lighter;
+}

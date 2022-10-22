@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="nav">
+        <input id="search-box" type="text" placeholder="Enter Your City Here...">
+        <button id="searchBtn">Search</button><span>Different Weather ?</span><span>Metric: &#8451;, m/s</span><span>Imperical:
+            &#8457;,mph</span>
+    </div>
+    <div id="container">
+        <div id="details">
+            <h3>Aug 4, 11:51am</h3>
+            <h3 id="city">Pune</h3>
+            <img src="" alt=""><span>23&#8451;</span>
+            <h3>Feels like 22&#8451;. Scattered clouds. Gentle Breeze</h3>
+            <div id="weather-data">
+                <h3><span>4.1m/s WNW</span><span>1015hPa</span></h3>
+                <h3><span>Humidity:54%</span><span>UV: 4</span></h3>
+                <h3><span>Dew point: 13 C</span><span>Visibility: 10.0km</span></h3>
+            </div>
+        </div>  
+        <iframe id="map" src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>      
+    </div>
+    <div id="weekForcast"></div>
+
+</body>
+
+</html>
+<script src="./index.js"></script>
